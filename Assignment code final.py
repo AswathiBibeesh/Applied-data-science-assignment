@@ -18,7 +18,7 @@ df = read_dataset('C:\\Users\\DELL\\Desktop\\tfl-journeys-type.csv')
 # Select first 10 rows
 journeys_data = select_rows(df, 10)
 
-# Extract the relevant columns for the graph
+# Extracting relevant columns for the graph
 x = journeys_data['Period and Financial year']
 y1 = journeys_data['Bus journeys (m)']
 y2 = journeys_data['Underground journeys (m)']
@@ -84,4 +84,4 @@ line_graph(x, y1, y2, 'Bus and Underground Journeys Over Time', 'Period and Fina
 bar_graph(x, y3, 'Overground Journeys Over Time', 'Period and Financial year', 'Journeys (millions)')
 
 # Create scatter plot
-scatter_plot(x, y4, 'DLR Journeys (m)', 'Period and Financial year', 'Journeys (millions)')
+scatter_plot(x, y4, 'DLR Journeys Over Time (m)', 'Period and Financial year', 'Journeys (millions)')
